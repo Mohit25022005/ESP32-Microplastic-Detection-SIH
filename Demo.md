@@ -1,7 +1,3 @@
-# WARP.md
-
-This file provides guidance to WARP (warp.dev) when working with code in this repository.
-
 ## Project Overview
 
 This is the **Integrated Microplastic Detection and Forecasting System** - a comprehensive hardware-software platform for real-time in-situ detection, classification, and forecasting of microplastics in rivers. The system evolved from a cost-effective SIH hackathon solution (₹4,000) into a production-ready IoT platform that combines ESP32-CAM edge computing, cloud-based AI analytics, satellite data integration, and decision support systems for environmental monitoring at scale.
