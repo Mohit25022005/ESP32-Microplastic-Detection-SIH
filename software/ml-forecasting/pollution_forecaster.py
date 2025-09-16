@@ -1,6 +1,6 @@
 """
 ESP32-CAM Microplastic Detection - ML Forecasting Module
-Smart India Hackathon 2025 - AquaGuard Team
+Smart India Hackathon 2025 - Tech Enchante Team
 
 Advanced machine learning system for microplastic pollution forecasting:
 - Time series analysis using LSTM and ARIMA models
@@ -10,7 +10,7 @@ Advanced machine learning system for microplastic pollution forecasting:
 - Model training and continuous learning capabilities
 - Integration with satellite data and external APIs
 
-Author: SIH AquaGuard Team
+Author: Tech Enchante Team
 Version: 2.0
 Date: September 2025
 """

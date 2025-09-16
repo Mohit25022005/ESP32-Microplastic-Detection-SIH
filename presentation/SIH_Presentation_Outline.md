@@ -1,20 +1,20 @@
 # SIH Hackathon 2025 Presentation - ESP32 Microplastic Detection System
-**Team: AquaGuard Innovators**  
+**Team: Tech Enchante**  
 **Revolutionary Cost-Effective Solution**
 
-## 🎯 Presentation Structure (15 Minutes)
+## 🎯 Presentation Structure
 
-### 1. Hook & Problem Statement (2 minutes)
+### 1. Hook & Problem Statement
 **Opening Impact Statement:**
-> *"What if we could detect microplastics in water for ₹4,000 instead of ₹50,00,000? Today, we make environmental monitoring accessible to everyone."*
+> *"What if we could detect microplastics in water for ₹4,000 instead of ₹500,000? Today, we make environmental monitoring accessible to everyone."*
 
 **Key Statistics:**
-- Traditional methods: ₹50,000-100,000 ($600-1,200)
+- Traditional methods: ₹50,000-100,000
 - Our solution: ₹4,000 ($48) - **100x cheaper!**
 - 157x better value score
 - Real-time results vs. days for lab analysis
 
-### 2. Solution Overview (3 minutes)
+### 2. Solution Overview
 **Revolutionary Approach:**
 - ESP32-CAM hardware platform
 - Multi-modal detection (laser + camera)
@@ -28,28 +28,28 @@
 - Automated particle classification
 - Cloud data integration
 
-### 3. Live Demonstration (5 minutes)
+### 3. Live Demonstration
 **Demo Script:**
-1. **Clean Water Test** (1 min)
+1. **Clean Water Test** 
    - Show baseline reading
    - Web interface display
    - Mobile responsiveness
 
-2. **Microplastic Sample** (2 min)
+2. **Microplastic Sample** 
    - Add test sample to chamber
    - Real-time detection process
    - Particle count and classification
 
-3. **Results Analysis** (1 min)
+3. **Results Analysis** 
    - Size distribution chart
    - Contamination level assessment
    - Confidence scores
 
-4. **Cost Comparison** (1 min)
+4. **Cost Comparison** 
    - Side-by-side with traditional methods
    - ROI calculation for deployment
 
-### 4. Technical Deep Dive (3 minutes)
+### 4. Technical Deep Dive
 **Hardware Innovation:**
 - ESP32-CAM: Dual-core processing
 - Laser diode: Optical scattering detection
@@ -68,7 +68,7 @@
 - Processing time: <30 seconds
 - Sensitivity: 10 particles/ml
 
-### 5. Market Impact & Scalability (2 minutes)
+### 5. Market Impact & Scalability 
 **Addressing Critical Needs:**
 - India's water pollution crisis
 - Affordable environmental monitoring
@@ -81,71 +81,6 @@
 - Remote monitoring capability
 - Network integration ready
 
-## 🎨 Visual Elements
-
-### Slide 1: Title & Team
-- Project logo
-- Team photo
-- Contact information
-- SIH 2025 branding
-
-### Slide 2: Problem Statement
-- Infographic: Water pollution statistics
-- Cost comparison chart
-- Current detection methods limitations
-
-### Slide 3: Solution Overview
-- System architecture diagram
-- Component photos
-- Technology stack visualization
-
-### Slide 4: Revolutionary Cost Advantage
-**Comparison Table:**
-| Method | Cost | Time | Portability | Our Advantage |
-|--------|------|------|-------------|---------------|
-| FTIR | ₹50,00,000 | 2-4 hrs | Lab-only | **100x cheaper** |
-| Raman | ₹30,00,000 | 1-3 hrs | Lab-only | **75x cheaper** |
-| Fluorescence | ₹20,00,000 | 1-2 hrs | Lab-only | **50x cheaper** |
-| **Our ESP32** | **₹4,000** | **30 sec** | **Portable** | **REVOLUTIONARY** |
-
-### Slide 5: Technical Specifications
-- Detection range and accuracy
-- Performance metrics
-- Hardware components
-- Software features
-
-### Slide 6: Live Demo Setup
-- Physical system photo
-- Web interface screenshot
-- Mobile view demonstration
-- Real-time data display
-
-### Slide 7: Detection Results
-- Before/after images
-- Particle count visualization
-- Size distribution charts
-- Contamination level indicators
-
-### Slide 8: Market Impact
-- Deployment scenario map
-- Government use cases
-- Environmental benefits
-- Social impact metrics
-
-### Slide 9: Business Model
-- Cost breakdown
-- Revenue projections
-- Market penetration strategy
-- Partnership opportunities
-
-### Slide 10: Future Roadmap
-- Version 2.0 features
-- Advanced ML models
-- IoT network expansion
-- International deployment
-
-## 🎤 Speaking Points
-
 ### Opening Hook
 *"Judges, imagine if every village in India could afford to monitor their water quality in real-time. Today, we turn that vision into reality with our ₹4,000 microplastic detection system - a 100x cost reduction that maintains research-grade accuracy."*
 
@@ -157,7 +92,7 @@
 - India's water crisis needs immediate solutions
 
 ### Solution Highlight
-- **Revolutionary cost**: From ₹50,00,000 to ₹4,000
+- **Revolutionary cost**: From ₹100,000 to ₹4,000
 - **Speed improvement**: From hours to 30 seconds
 - **Accessibility**: From lab-only to field deployment
 - **Real-time monitoring**: Immediate contamination alerts
@@ -191,12 +126,6 @@
 - **Real-time results**
 - **10 particles/ml sensitivity**
 
-### Innovation Score
-- **9.1/10 overall rating**
-- **10.0/10 cost-effectiveness**
-- **9.5/10 real-time capability**
-- **9.0/10 technical innovation**
-
 ### Market Readiness
 - **90% success probability**
 - **2-3 hour assembly time**
@@ -219,34 +148,12 @@
 - [ ] Data logging enabled
 - [ ] Backup presentation ready
 
-### Presentation Materials
-- [ ] Slides loaded and tested
-- [ ] Demo script rehearsed
-- [ ] Component explanations prepared
-- [ ] Cost comparison charts ready
-- [ ] Technical specifications accessible
-
 ### Backup Plans
 - [ ] Pre-recorded demo video ready
 - [ ] Static images of results prepared
 - [ ] Offline presentation mode available
 - [ ] Manual operation procedures documented
 
-## 🏆 Winning Strategy
-
-### Unique Value Proposition
-1. **Revolutionary cost reduction**: 100x cheaper
-2. **Immediate social impact**: Water safety for all
-3. **Technical excellence**: Research-grade accuracy
-4. **Market readiness**: Deployment-ready prototype
-5. **Scalability**: National network potential
-
-### Competitive Advantages
-- Only solution under ₹5,000
-- Real-time detection capability
-- Portable field deployment
-- IoT-enabled monitoring
-- Open-source development
 
 ### Judge Appeal Points
 - **Innovation**: Novel technology combination
@@ -260,11 +167,3 @@
 
 ---
 
-**Contact Information:**
-- Team Lead: [Your Name]
-- Email: [your-email]
-- Phone: [your-phone]
-- GitHub: [github-repo]
-- Demo URL: [live-demo-link]
-
-**This presentation positions our ESP32 microplastic detection system as a revolutionary breakthrough that perfectly aligns with SIH's innovation goals while delivering unprecedented cost-effectiveness and social impact.**
