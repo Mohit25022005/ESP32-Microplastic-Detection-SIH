@@ -481,7 +481,4 @@ See `hardware/bom/components_list.md` for complete component specifications, sup
 
 ---
 
-**Document Version**: v1.0
-**Last Updated**: September 2025
-**Author**: SIH AquaGuard Team
-**Review Required**: Electrical Engineer, Laser Safety Officer
+**Author**: SIH Tech Enchante
