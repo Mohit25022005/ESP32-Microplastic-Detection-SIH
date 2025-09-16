@@ -1,6 +1,6 @@
 """
 ESP32-CAM Microplastic Detection - Image Processing Module
-Smart India Hackathon 2025 - AquaGuard Team
+Smart India Hackathon 2025 -Tech Enchante Team
 
 Advanced OpenCV-based microplastic detection system with:
 - Real-time image processing from ESP32-CAM

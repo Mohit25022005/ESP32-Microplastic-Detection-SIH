@@ -129,7 +129,7 @@ void setup() {
   Serial.begin(115200);
   Serial.println("\n" + String("=").repeat(50));
   Serial.println("🔬 ESP32-CAM Microplastic Detection System v2.0");
-  Serial.println("🏆 Smart India Hackathon 2025 - AquaGuard Team");
+  Serial.println("🏆 Smart India Hackathon 2025 - Tech Enchante");
   Serial.println("💰 Revolutionary ₹4,000 Solution (100x Cost Reduction)");
   Serial.println(String("=").repeat(50));
   
