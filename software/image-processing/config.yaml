@@ -1,0 +1,201 @@
+# ESP32-CAM Microplastic Detection System Configuration
+# Smart India Hackathon 2025 - AquaGuard Team
+
+# Detection Parameters
+detection:
+  # Particle size filtering (in pixels)
+  min_particle_area: 5          # Minimum particle size (pixels²)
+  max_particle_area: 10000      # Maximum particle size (pixels²)
+  
+  # Image preprocessing
+  blur_kernel_size: 5           # Gaussian blur kernel size (odd number)
+  threshold_value: 127          # Binary threshold value (0-255)
+  morphology_kernel_size: 3     # Morphological operation kernel size
+  
+  # Advanced detection settings
+  adaptive_threshold_block_size: 11  # Block size for adaptive thresholding
+  adaptive_threshold_c: 2            # Constant subtracted from mean
+  
+  # Contour filtering
+  min_circularity: 0.1          # Minimum circularity (0-1)
+  max_aspect_ratio: 5.0         # Maximum width/height ratio
+  min_solidity: 0.5             # Minimum solidity (area/convex_hull_area)
+  min_confidence: 0.3           # Minimum detection confidence
+
+# Calibration Settings
+calibration:
+  pixel_to_micron_ratio: 0.5    # Default: 1 pixel = 0.5 micrometers
+  calibration_object_size: 100  # Known calibration object size (micrometers)
+  
+  # Size classification ranges (micrometers)
+  size_ranges:
+    nano: [0.001, 1.0]          # Nanoplastics
+    micro_small: [1.0, 100.0]   # Small microplastics
+    micro_large: [100.0, 1000.0] # Large microplastics
+    meso: [1000.0, 5000.0]      # Mesoplastics
+    macro: [5000.0, 99999.0]    # Macroplastics
+
+# MQTT Communication
+mqtt:
+  broker: "localhost"           # MQTT broker address
+  port: 1883                    # MQTT broker port
+  username: "processor"         # MQTT username
+  password: "processor_2025"    # MQTT password
+  keepalive: 60                 # Connection keepalive (seconds)
+  
+  # Topic configuration
+  topics:
+    images: "sensors/microplastic/images"        # Incoming images
+    results: "sensors/microplastic/results"      # Detection results
+    status: "processor/microplastic/status"      # Processor status
+    commands: "processor/microplastic/commands"  # Remote commands
+  
+  # QoS settings
+  qos:
+    images: 0     # At most once
+    results: 1    # At least once
+    status: 1     # At least once
+
+# Storage Configuration
+storage:
+  # Directory paths (relative to project root)
+  images_dir: "processed_images"
+  results_dir: "detection_results"
+  database: "microplastic_data.db"
+  
+  # Image storage settings
+  save_original: true           # Save original images
+  save_annotated: true          # Save annotated images
+  save_binary: false            # Save binary processing images
+  image_format: "jpg"           # Image format (jpg, png)
+  image_quality: 95             # JPEG quality (1-100)
+  
+  # Database settings
+  backup_interval: 3600         # Database backup interval (seconds)
+  max_records: 100000           # Maximum records before cleanup
+  retention_days: 30            # Data retention period
+
+# Image Quality Assessment
+quality:
+  # Sharpness assessment
+  laplacian_threshold: 100      # Minimum Laplacian variance
+  
+  # Contrast assessment
+  contrast_threshold: 30        # Minimum standard deviation
+  
+  # Brightness assessment
+  min_brightness: 20            # Minimum mean brightness
+  max_brightness: 235           # Maximum mean brightness
+  
+  # Overall quality thresholds
+  min_quality_score: 0.3        # Minimum acceptable quality
+  reject_poor_quality: false    # Reject poor quality images
+
+# Processing Performance
+processing:
+  # Queue settings
+  image_queue_size: 10          # Maximum images in processing queue
+  result_queue_size: 50         # Maximum results in output queue
+  
+  # Threading
+  max_worker_threads: 2         # Maximum processing threads
+  thread_timeout: 1.0           # Thread timeout (seconds)
+  
+  # Performance monitoring
+  stats_update_interval: 10     # Statistics update frequency (images)
+  enable_profiling: false       # Enable detailed performance profiling
+
+# Anomaly Detection
+anomaly:
+  # Particle count thresholds
+  max_particles_normal: 100     # Maximum particles for normal conditions
+  min_particles_alert: 200      # Minimum particles for alert
+  
+  # Confidence thresholds
+  min_confidence_normal: 0.7    # Minimum average confidence for normal
+  min_confidence_alert: 0.4     # Minimum confidence for alert
+  
+  # Time-based detection
+  alert_window_minutes: 5       # Time window for anomaly detection
+  consecutive_alerts: 3         # Consecutive alerts needed for alarm
+
+# Logging Configuration
+logging:
+  level: "INFO"                 # Log level (DEBUG, INFO, WARNING, ERROR)
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # File logging
+  log_to_file: true
+  log_file: "microplastic_detector.log"
+  max_log_size: "10MB"          # Maximum log file size
+  backup_count: 5               # Number of backup log files
+  
+  # Console logging
+  log_to_console: true
+  console_level: "INFO"
+
+# Development Settings
+development:
+  debug_mode: false             # Enable debug features
+  save_debug_images: false      # Save intermediate processing images
+  verbose_output: false         # Detailed console output
+  
+  # Testing
+  test_mode: false              # Enable test mode features
+  mock_mqtt: false              # Use mock MQTT client
+  
+# API Integration
+api:
+  # Cloud service endpoints
+  cloud_endpoint: "https://api.microplastic.cloud/v1"
+  api_key: "your_api_key_here"
+  timeout: 30                   # Request timeout (seconds)
+  
+  # Batch processing
+  batch_size: 10                # Images per batch upload
+  batch_interval: 300           # Batch upload interval (seconds)
+  
+  # Retry settings
+  max_retries: 3
+  retry_delay: 5                # Delay between retries (seconds)
+
+# Hardware-Specific Settings
+hardware:
+  # ESP32-CAM specific
+  esp32_cam:
+    expected_resolution: [800, 600]  # Expected image resolution
+    jpeg_quality_range: [10, 20]     # Expected JPEG quality range
+    
+  # Photodiode correlation
+  photodiode:
+    enable_correlation: true          # Correlate with photodiode data
+    voltage_particle_ratio: 0.1       # Voltage increase per particle
+    baseline_voltage: 1.5             # Baseline photodiode voltage
+    
+# Machine Learning Enhancement
+ml:
+  # Enable ML features
+  enable_classification: false        # Enable ML particle classification
+  model_path: "models/particle_classifier.pkl"
+  
+  # Classification settings
+  confidence_threshold: 0.8          # ML classification threshold
+  feature_extraction: "hog"          # Feature extraction method
+  
+  # Training data
+  training_data_path: "training_data/"
+  auto_labeling: false               # Enable automatic labeling
+  
+# Validation and Testing
+validation:
+  # Test images
+  test_images_dir: "test_images/"
+  ground_truth_dir: "ground_truth/"
+  
+  # Performance metrics
+  calculate_metrics: false           # Calculate precision/recall
+  save_confusion_matrix: false       # Save confusion matrix
+  
+  # Benchmarking
+  benchmark_mode: false              # Enable benchmarking
+  benchmark_iterations: 100         # Number of benchmark runs

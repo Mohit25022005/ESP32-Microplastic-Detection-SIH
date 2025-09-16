@@ -1,0 +1,76 @@
+# ESP32-CAM Microplastic Detection - ML Forecasting Requirements
+# Smart India Hackathon 2025 - AquaGuard Team
+
+# Core Machine Learning Libraries
+scikit-learn==1.3.0
+numpy==1.24.3
+pandas==2.0.3
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Deep Learning (PyTorch)
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+
+# Time Series Analysis
+statsmodels==0.14.0
+prophet==1.1.4  # Facebook Prophet for time series forecasting
+
+# Data Processing & Storage
+sqlite3  # Built-in with Python
+PyYAML==6.0.1
+joblib==1.3.1
+
+# API Integration
+aiohttp==3.8.5
+requests==2.31.0
+
+# Weather Data APIs
+pyowm==3.3.0  # OpenWeatherMap Python library
+
+# Visualization
+plotly==5.15.0
+bokeh==3.2.0
+
+# Statistical Analysis
+scipy==1.11.1
+
+# Configuration & Environment
+python-dotenv==1.0.0
+configparser  # Built-in with Python
+
+# Logging & Monitoring
+python-json-logger==2.0.7
+
+# Testing & Development
+pytest==7.4.0
+pytest-asyncio==0.21.0
+jupyter==1.0.0
+ipykernel==6.25.0
+
+# Optional: GPU acceleration
+# cupy-cuda11x==12.2.0  # For NVIDIA CUDA support
+# tensorflow-gpu==2.13.0  # Alternative deep learning framework
+
+# Optional: Advanced ML libraries
+xgboost==1.7.6  # Extreme Gradient Boosting
+lightgbm==4.0.0  # Light Gradient Boosting
+catboost==1.2.1  # CatBoost gradient boosting
+
+# Feature Engineering
+feature-engine==1.6.2
+tsfresh==0.20.1  # Time Series Feature extraction
+
+# Model Validation & Selection
+optuna==3.2.0  # Hyperparameter optimization
+mlflow==2.5.0  # ML experiment tracking
+
+# Data Quality & Preprocessing
+great-expectations==0.17.10  # Data validation
+imbalanced-learn==0.11.0  # Handling imbalanced datasets
+
+# Optional: Cloud Storage
+# boto3==1.28.25  # AWS SDK
+# azure-storage-blob==12.17.0  # Azure Storage
+# google-cloud-storage==2.10.0  # Google Cloud Storage
